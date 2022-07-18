@@ -14,7 +14,7 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery");
-  list.style.display = flex;
+//  list.classList.toggle() = flex;
 
 images.forEach(element => {
   let newImg = document.createElement("li");
