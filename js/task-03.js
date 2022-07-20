@@ -14,11 +14,13 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery");
+const items =[];
 //  list.classList.toggle() = flex;
 
 images.forEach(element => {
   let newImg = document.createElement("li");
   newImg.insertAdjacentHTML("beforeend",`<img src=${element.url} alt=${element.alt}></img>`);
-  list.append(newImg);
-})
+  items.push(newImg);
+});
+list.append(...items);
 
